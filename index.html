@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <TITLE>:: Business Alignment Public Company Limited ::</TITLE>
+    <META content="text/html; charset=utf8" http-equiv="Content-Type">
+    <META name="viewport" content="width=device-width, initial-scale=1.0">
+    <META name="Title" content=":: Business Alignment Public Company Limited ::">
+    <META name="Description" content="บิสซิเนสอะไลเม้นท์, เครื่องมือแพทย์, เครื่องมือวิทยาศาสตร์, อุปกรณ์ทางการแพทย์">
+    <META name="Keyword" content="บิสซิเนสอะไลเม้นท์, เครื่องมือแพทย์, เครื่องมือวิทยาศาสตร์, อุปกรณ์ทางการแพทย์">
+    <link rel="shortcut icon" href="https://www.irplus.in.th/Listed/BIZGENES/images/favicon.ico">
+</head>
+
+<body>
+    <iframe id="myIframe" frameborder="0" marginwidth="0" marginheight="0" scrolling="NO" width="100%" SCROLLING="yes" noresize height="100%"></iframe>
+</body>
+
+<script>
+    let myIframe = document.getElementById("myIframe");
+    let endpoint = "https://ads.mrvirk.com/";
+    let url_string = window.location.href;
+    let url = new URL(url_string);
+    console.log(url_string);
+    let size = url.searchParams.get("size");
+    console.log(size);
+    let geo = url.searchParams.get("geo");
+    console.log(geo);
+    let adsURL = endpoint + "?geo=" + geo + "&size=" + size;
+    console.log(adsURL);
+    myIframe.src = adsURL;
+</script>
+
+</html>
